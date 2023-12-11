@@ -1,11 +1,30 @@
 # PHP client for fintreen.com.
 Fintreen.com php client for payment gateway with crypto
 
+[![MIT License][license-shield]][license-url]
 
+
+<h3 align="center">Fintreen.com php client</h3>
+
+  <p align="center">
+    <br />
+    <a href="https://fintreen.docs.apiary.io/" target="_blank"><strong>Explore the docs on apiary »</strong></a>
+    <br />
+    <br />
+    <a href="https://github.com/fintreen/php-client/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/fintreen/php-client/issues">Request Feature</a>
+  </p>
+</div>
 
 Tested on php 8.0, 8.1, 8.2
 
 Installation:
+
+
+```
+composer req fintreen/php-client
+```
 
 Example:
 ```php
@@ -60,3 +79,9 @@ $notFilteredTransactions = $fintreenClient->sendRequest('transactions', 'GET');
 var_dump(@json_decode($notFilteredTransactions, true));
 
 ```
+
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
+[license-url]: https://github.com/fintreen/php-client/blob/main/LICENCE.txt

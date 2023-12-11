@@ -1,4 +1,5 @@
 /vendor
+example.php
 .env
 .env.backup
 .phpunit.result.cache
