@@ -17,21 +17,25 @@ Fintreen.com php client for payment gateway with crypto
   </p>
 </div>
 
-Tested on php 8.0, 8.1, 8.2
+Tested on php 8.0, 8.1, 8.2. Should be also good with php 8.3.
 
-Installation:
+Use composer2 for this
+
+### Installation:
 
 
 ```
 composer req fintreen/php-client
 ```
+#### Then see example:
 
 Example:
 ```php
 
 <?php
-
-include (__DIR__ . DIRECTORY_SEPARATOR . 'FintreenClient.php');
+include "vendor/autoload.php";
+// or you can download and use 
+// include (__DIR__ . DIRECTORY_SEPARATOR . 'FintreenClient.php');
 
 $token = 'yourtokenhere';
 $email = 'youremailhere';
