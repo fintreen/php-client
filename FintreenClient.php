@@ -2,6 +2,8 @@
 
 declare(strict_types=1);
 
+namespace Fintreen;
+
 class FintreenClient {
     public const DEFAULT_FIAT_CODE = 'EUR';
 
