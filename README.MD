@@ -34,6 +34,9 @@ Example:
 
 <?php
 include "vendor/autoload.php";
+
+use Fintreen\FintreenClient;
+
 // or you can download and use 
 // include (__DIR__ . DIRECTORY_SEPARATOR . 'FintreenClient.php');
 
