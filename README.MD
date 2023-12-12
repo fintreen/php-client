@@ -81,8 +81,8 @@ $filters['codesFilter'] = implode(',', $currencyCodesToCalculate);// comma sepra
 $transactionsList = $fintreenClient->getTransactionsList($filters);
 
 // You can alternatively use $fintreenClient->sendRequest
-
-$notFilteredTransactions = $fintreenClient->sendRequest('transactions', 'GET');
+$anotherFilters['statusId'] = 1; // New
+$notFilteredTransactions = $fintreenClient->sendRequest('transactions', 'GET', $anotherFilters);
 var_dump(@json_decode($notFilteredTransactions, true));
 
 ```
