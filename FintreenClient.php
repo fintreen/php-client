@@ -90,9 +90,9 @@ class FintreenClient {
      * @param string $endpoint
      * @param string $method
      * @param array $params
-     * @return string|null
+     * @return string|null|bool
      */
-    public function sendRequest(string $endpoint, string $method = 'GET', array $params = []): string|null {
+    public function sendRequest(string $endpoint, string $method = 'GET', array $params = []): string|null|bool {
         $urlToSend = $this->baseUrl . $this->suffix . $endpoint;
         if ($params) {
             ksort($params);
@@ -122,7 +122,7 @@ class FintreenClient {
             CURLOPT_RETURNTRANSFER => true,
             CURLOPT_ENCODING => '',
             CURLOPT_MAXREDIRS => 10,
-            CURLOPT_TIMEOUT => 10,
+            CURLOPT_TIMEOUT => 30,
             CURLOPT_FOLLOWLOCATION => true,
             CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
             CURLOPT_CUSTOMREQUEST => $method,
