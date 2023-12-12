@@ -1,5 +1,5 @@
 # PHP client for fintreen.com.
-Fintreen.com php client for payment gateway with crypto
+Fintreen.com php client for crypto-payment gateway API
 
 [![MIT License][license-shield]][license-url]
 
